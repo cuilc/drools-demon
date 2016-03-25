@@ -125,9 +125,9 @@ public class PointRuleEngineImpl implements PointRuleEngine {
 	private List<String> getTestDrlFile() {
 		List<String> drlFilePath = new ArrayList<String>();
 		drlFilePath
-				.add("D:/Users/cuiliangcai/workspace/DroolsPointsDemo/src/addpoint.drl");
+				.add(PointRuleEngineImpl.class.getResource("/addpoint.drl").getPath());
 		drlFilePath
-				.add("D:/Users/cuiliangcai/workspace/DroolsPointsDemo/src/subpoint.drl");
+				.add(PointRuleEngineImpl.class.getResource("/subpoint.drl").getPath());
 
 		return drlFilePath;
 	}
