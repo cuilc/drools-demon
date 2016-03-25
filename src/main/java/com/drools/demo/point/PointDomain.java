@@ -1,7 +1,7 @@
 package com.drools.demo.point;
 /**
  * 积分计算对象
- * @author quzishen
+ * @author cuilc
  */
 public class PointDomain {
 	// 用户名

@@ -1,7 +1,7 @@
 package com.drools.demo.point;
 /**
  * 规则接口
- * @author quzishen
+ * @author cuilc
  */
 public interface PointRuleEngine {
 	

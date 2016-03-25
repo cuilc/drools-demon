@@ -1,11 +1,8 @@
+package com.drools.demo.point;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-
-import com.drools.demo.point.PointDomain;
-import com.drools.demo.point.PointRuleEngine;
-import com.drools.demo.point.PointRuleEngineImpl;
 
 
 public class Main {

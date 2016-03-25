@@ -15,7 +15,7 @@ import org.drools.spi.Activation;
 
 /**
  * 规则接口实现类
- * @author quzishen
+ * @author cuilc
  */
 public class PointRuleEngineImpl implements PointRuleEngine {
 	private RuleBase ruleBase;
@@ -26,7 +26,7 @@ public class PointRuleEngineImpl implements PointRuleEngine {
 	public void initEngine() {
 		// 设置时间格式
 		System.setProperty("drools.dateformat", "yyyy-MM-dd HH:mm:ss");
-		ruleBase = RuleBaseFacatory.getRuleBase();
+		ruleBase = MyRuleBaseFactory.getRuleBase();
 		try {
 			PackageBuilder backageBuilder = getPackageBuilderFromDrlFile();
 			ruleBase.addPackages(backageBuilder.getPackages());
@@ -43,7 +43,7 @@ public class PointRuleEngineImpl implements PointRuleEngine {
 	 * @see com.drools.demo.point.PointRuleEngine#refreshEnginRule()
 	 */
 	public void refreshEnginRule() {
-		ruleBase = RuleBaseFacatory.getRuleBase();
+		ruleBase = MyRuleBaseFactory.getRuleBase();
 		org.drools.rule.Package[] packages = ruleBase.getPackages();
 		for(org.drools.rule.Package pg : packages) {
 			ruleBase.removePackage(pg.getName());

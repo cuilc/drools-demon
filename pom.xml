@@ -5,16 +5,6 @@
 	<artifactId>DroolsPointsDemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<build>
-		<sourceDirectory>src</sourceDirectory>
-		<resources>
-			<resource>
-				<directory>src</directory>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</resource>
-		</resources>
-
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -55,11 +45,22 @@
 	</dependencies>
 	<repositories>
 		<repository>
+			<id>oschina nexus</id>
+   			<name>oschina nexus</name>
+   			<url>http://maven.oschina.net/content/groups/public/</url>
+   			<releases>
+   				<enabled>true</enabled>
+   			</releases>
+   			<snapshots>
+   				<enabled>false</enabled>
+   			</snapshots>
+		</repository>
+		<repository>
 			<id>jboss-public-repository-group</id>
 			<name>JBoss Public Maven Repository Group</name>
 			<url>
-https://repository.jboss.org/nexus/content/groups/public/
-</url>
+			https://repository.jboss.org/nexus/content/groups/public/
+			</url>
 			<layout>default</layout>
 			<releases>
 				<enabled>true</enabled>

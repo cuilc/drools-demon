@@ -4,9 +4,9 @@ import org.drools.RuleBaseFactory;
 
 /**
  * RuleBaseFacatory 单实例RuleBase生成工具
- * @author quzishen
+ * @author cuilc
  */
-public class RuleBaseFacatory {
+public class MyRuleBaseFactory {
 	private static RuleBase ruleBase;
 	
 	public static RuleBase getRuleBase(){
